@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# 规范与约定
 
-You can use the [editor on GitHub](https://github.com/libraire/libraire.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+> An unexamined life is not worth living —— Socrates
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Gitbook的使用
 
-### Markdown
+需详细了解请戳[指南](http://www.vapicloud.com/books/gitbook/), 常用操作如下:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```code
 
-```markdown
-Syntax highlighted code block
+安装gitbook
+# npm install gitbook-cli -g
 
-# Header 1
-## Header 2
-### Header 3
+在SUMMARY.md中编辑目录,并通过下面命令生成对应的文件和文件夹
+# gitbook init
 
-- Bulleted
-- List
+生成静态文件
+# gitbook build
 
-1. Numbered
-2. List
+启动本地服务
+# gitbook serve
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## 约定
 
-### Jekyll Themes
+### 图片大小规范
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/libraire/libraire.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+不建议使用大文件,页面上满足基本的清晰度即可.大文件考虑放使用图床.
 
-### Support or Contact
+### 资源存储路径
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+文章需引入图片或其他资源时,需要存储在文章平级目录的asserts目录下.
+
+Typora的设置建议参考下图:
+
+![image-20210827155319945](asserts/image-20210827155319945.png)
+
